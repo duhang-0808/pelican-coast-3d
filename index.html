@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#d9efeb" />
+  <meta name="description" content="一只鹈鹕，一辆单车，一段没有终点的海岸假日。" />
+  <title>鹈鹕出逃记 · 海岸骑行</title>
+  <script type="module" crossorigin src="./assets/index-Br3O4PXU.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BQzB5i6q.css">
+</head>
+<body>
+  <main id="app">
+    <div id="scene" role="img" aria-label="白色鹈鹕戴着头盔、系着红围巾，在海岸公路上骑绿色自行车的可交互三维场景"></div>
+    <header><a class="brand" href="./"><i data-lucide="bike"></i><span>沿海慢行社</span></a><span class="edition">海岸漫游 · 第 001 站</span><button id="sound" class="icon" aria-label="开启环境音" title="开启环境音"><i data-lucide="volume-x"></i></button></header>
+    <section class="title"><p class="eyebrow"><span></span>今日宜，去吹海风</p><h1>鹈鹕出逃记<span>骑到风的那一边。</span></h1><p class="intro">把日常留在身后，把海岸交给车轮。</p></section>
+    <div class="weather"><i data-lucide="sun" id="weather-icon"></i><span id="weather-label">晴日海风</span><span class="weather-line"></span><span>沿海公路</span></div>
+    <aside class="tools" aria-label="场景工具"><button class="icon" id="bell" aria-label="按车铃" title="按车铃"><i data-lucide="bell-ring"></i></button><button class="icon" id="photo" aria-label="保存照片" title="保存照片"><i data-lucide="camera"></i></button><button class="icon" id="reset" aria-label="重置视角" title="重置视角"><i data-lucide="rotate-ccw"></i></button><button class="icon" id="fullscreen" aria-label="全屏" title="全屏"><i data-lucide="maximize"></i></button></aside>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <div id="loading"><span class="loader"></span><p>海风正在赶来</p></div>
+    <footer>
+      <div class="ride"><button class="play" id="play" aria-label="暂停骑行" title="暂停骑行"><i data-lucide="pause"></i></button><div><span class="label" id="ride-state">自在骑行中</span><strong><span id="distance">0.00</span><small> 公里</small></strong></div></div>
+      <div class="control speed"><label for="speed">骑行速度 <output id="speed-label">18 公里/时</output></label><input id="speed" type="range" min="6" max="36" value="18" step="1" /></div>
+      <div class="control"><span class="label">镜头</span><div class="segments" id="cameras"><button data-camera="follow" aria-pressed="true">追随</button><button data-camera="side" aria-pressed="false">侧面</button><button data-camera="orbit" aria-pressed="false">环绕</button></div></div>
+      <div class="control"><span class="label">此刻的光</span><div class="segments times" id="times"><button data-time="day" aria-label="晴日" aria-pressed="true" title="晴日"><i data-lucide="sun"></i></button><button data-time="sunset" aria-label="日落" aria-pressed="false" title="日落"><i data-lucide="sunset"></i></button><button data-time="night" aria-label="月夜" aria-pressed="false" title="月夜"><i data-lucide="moon"></i></button></div></div>
+    </footer>
+    <div class="bottom-note"><span>不赶时间，只追海风。</span><span id="trip-note">海岸线 · 永远有下一站</span></div>
+  </main>
+</body>
+</html>
